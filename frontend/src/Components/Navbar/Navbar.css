@@ -1,0 +1,88 @@
+/* https://www.google.com/search?client=ubuntu-sn&hs=CGF&sca_esv=71f5e84b289439a3&sca_upv=1&channel=fs&q=display+flex&udm=2&fbs=AEQNm0AeMNWKf4PpcKMI-eSa16lJoRPMIuyspCxWO6iZW9F1Ns6EVsgc0W_0xN47PHaanAEtg26fpfc9gg2y1-ZsywNNidIzOA0khSyMN51n7r3LlDC9M1NYStuTRDcBUYQ58dKt-Q6SigUS4Yne5yDHLg0vPBr98Nz98twIaNcnWiKaD4QuEh93Q53sB-UkWP9OcfO5KeatY98HR7cDW9ZTjFpZV7kJtA&sa=X&ved=2ahUKEwj-x-P13LyHAxVmsFYBHUxsISoQtKgLegQIEBAB&biw=1858&bih=959&dpr=1#vhid=UqOICjIZEDT5hM&vssid=mosaic */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: white;
+    height: 50px;
+}
+.nav-logo img{
+    width: 60px;
+    height: auto;
+}
+.nav-logo p{
+    color: #171717;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-tribar-menu{
+    display: grid;
+}
+.nav-tribar{
+    display: block;
+    font-size: 8vw;
+    cursor: pointer;
+    height: auto;
+}
+.nav-menu{
+    display: none;
+    color: #b9b9b9;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-menu-visible{
+    display: grid;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+.nav-menu li{
+    padding: 20px 20px;
+}
+/* .nav-menu li:active{
+    background-color: #c9c9c9;
+    color: #171717;
+} */
+.nav-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: black;
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    .navbar{justify-content: space-around;}
+    .nav-logo{order: 1;}
+    .nav-tribar-menu{order: 2;}
+    .nav-cart{order: 3;}
+    .nav-tribar{display: none;}
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 80px 0 0;
+    }
+}

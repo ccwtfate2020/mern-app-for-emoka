@@ -1,0 +1,115 @@
+.cartitems{
+    padding: 10px;
+}
+.cartitems-format{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+}
+.carticon-product-icon{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    transform: scale(0.9);
+    justify-self: center;
+}
+.cartitems-productdetail{
+    align-self: center;
+}
+.cartitems-productdetail-totalprice{
+    display: none;
+}
+.cartitems-quantity{
+    display: flex;
+    margin: 10px 0;
+    gap: 20px;
+}
+.cartitems-quantity-number{
+    width: 20%;
+    text-align: center;
+}
+.cartitems-quantity-plusminus{
+    font-size: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.cartitems-remove-icon{
+    align-self: start;
+    justify-self: end;
+    cursor: pointer;
+}
+.cartitems-total{
+    display: grid;
+    gap: 20px;
+}
+.cartitems-total-item span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.cartitems-total button{
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: black;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 75px;
+}
+.cartitems-total button:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.cartitems-buyerinfo,.cartitems-buyerinfo-dealmethods,.cartitems-buyerinfo-dealmethods-pickup,.cartitems-buyerinfo-dealmethods-delivery{
+    display: grid;
+    gap: 20px;
+    font-size: 20px;
+}
+.cartitems-buyerinfo input,.cartitems-buyerinfo select,.cartitems-buyerinfo textarea{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: rgb(252, 252, 252);
+    border: 0.5px solid #c9c9c9;
+    border-radius: 15px;
+}
+@media screen and (min-width: 768px){
+    .cartitems{
+        padding: 10px 5vw;
+    }
+    .cartitems-productdetail{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        font-size: 20px;
+    }
+    .carticon-product-icon{
+        max-width: 150px;
+    }
+    .cartitems-productdetail-totalprice{
+        display: block;
+        justify-self: end;
+    }
+    .cartitems-remove-icon{
+        align-self: center;
+        justify-self: center;
+    }
+    .cartitems-total button{
+        width: 300px;
+    }
+    .cartitems-total-item{
+        padding-right: 50px;
+    }
+    .cartitems-buyerinfo{
+        width: 60%;
+    }
+    .cartitems-buyerinfo input,.cartitems-buyerinfo select,.cartitems-buyerinfo textarea{
+        font-size: 20px;
+    }
+}

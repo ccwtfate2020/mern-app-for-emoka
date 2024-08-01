@@ -1,0 +1,45 @@
+.contact{
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.contact p{
+    font-size: 15px;
+    margin: 0;
+}
+.contact input, .contact textarea{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(252, 252, 252);
+    border: 0.5px solid #c9c9c9;
+    border-radius: 15px;
+}
+.contact input{
+    height: 30px;
+}
+.contact button {
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: black;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 75px;
+}
+@media screen and (min-width: 768px){
+    .contact{
+        padding: 0 100px;
+    }
+    .contact p{
+        font-size: 20px;
+    }
+    .contact input,.contact button  {
+        font-size: 20px;
+        width: 600px;
+    }
+}

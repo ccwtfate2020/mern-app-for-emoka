@@ -1,0 +1,12 @@
+.poster{
+    display: flex;
+    justify-content: center;
+}
+.poster img{
+    width: 100%;
+}
+@media screen and (min-width: 1024px){
+    .poster img{
+        width: 1000px;
+    }
+}
